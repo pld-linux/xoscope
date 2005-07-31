@@ -1,3 +1,7 @@
+# TODO
+# - doesn't build on amd64:
+# gr_gtk.c: In function `setbits':
+# gr_gtk.c:524: warning: cast from pointer to integer of different size
 Summary:	xoscope - digital oscilloscope on pc
 Summary(pl):	xoscope - cyfrowy oscyloskop na pc
 Name:		xoscope
@@ -35,7 +39,7 @@ osziFOX jako sygna³ wej¶ciowy.
 %{__autoheader}
 %{__automake}
 %configure
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
