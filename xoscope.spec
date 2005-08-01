@@ -6,11 +6,12 @@ Summary:	xoscope - digital oscilloscope on pc
 Summary(pl):	xoscope - cyfrowy oscyloskop na pc
 Name:		xoscope
 Version:	1.12
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xoscope/%{name}-%{version}.tgz
 # Source0-md5:	89f8019a772713a976b634305d29cfe5
+Patch0:		xoscope-pmake.patch
 URL:		http://xoscope.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +33,7 @@ osziFOX jako sygna³ wej¶ciowy.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}
@@ -39,7 +41,7 @@ osziFOX jako sygna³ wej¶ciowy.
 %{__autoheader}
 %{__automake}
 %configure
-%{__make} -j1
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
