@@ -1,0 +1,8 @@
+--- xoscope-1.12.orig/bitscope-glade-src/Makefile.am	2001-05-22 05:11:03.000000000 +0000
++++ xoscope-1.12/bitscope-glade-src/Makefile.am	2005-08-01 15:42:49.000000000 +0000
+@@ -13,4 +13,4 @@
+ 
+ bitscope_SOURCES = main.c
+ 
+-bitscope_LDADD = @GTK_LIBS@ -L. -lbitscope
++bitscope_LDADD = @GTK_LIBS@ libbitscope.a
