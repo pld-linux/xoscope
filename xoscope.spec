@@ -1,7 +1,5 @@
-# TODO
-# - doesn't build on amd64:
-# gr_gtk.c: In function `setbits':
-# gr_gtk.c:524: warning: cast from pointer to integer of different size
+# TODO: broken on archs with sizeof(int)!=sizeof(void*) (i.e. all 64-bit)
+#       (it abuses guint field to place strings - see gr_gtk.c:670 and below)
 Summary:	xoscope - digital oscilloscope on PC
 Summary(pl):	xoscope - cyfrowy oscyloskop na PC
 Name:		xoscope
