@@ -2,8 +2,8 @@
 # - doesn't build on amd64:
 # gr_gtk.c: In function `setbits':
 # gr_gtk.c:524: warning: cast from pointer to integer of different size
-Summary:	xoscope - digital oscilloscope on pc
-Summary(pl):	xoscope - cyfrowy oscyloskop na pc
+Summary:	xoscope - digital oscilloscope on PC
+Summary(pl):	xoscope - cyfrowy oscyloskop na PC
 Name:		xoscope
 Version:	1.12
 Release:	0.2
@@ -27,9 +27,9 @@ x*oscope is a digital oscilloscope that uses a sound card (via
 signal input.
 
 %description -l pl
-x*oscope jest to cyfrowy oscyloskop który u¿ywa karty d¼wiêkowej
-(/dev/dsp albo EsounD) i/albo Radio Shack ProbeScope znany tak¿e jako
-osziFOX jako sygna³ wej¶ciowy.
+x*oscope jest to cyfrowy oscyloskop, który u¿ywa jako sygna³u
+wej¶ciowego karty d¼wiêkowej (/dev/dsp albo EsounD) i/lub Radio Shack
+ProbeScope znanego tak¿e jako osziFOX.
 
 %prep
 %setup -q
@@ -56,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog HARDWARE INTERNALS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/*/*
 %{_libdir}/%{name}
+%{_mandir}/*/*
