@@ -1,7 +1,7 @@
 # TODO: broken on archs with sizeof(int)!=sizeof(void*) (i.e. all 64-bit)
 #       (it abuses guint field to place strings - see gr_gtk.c:670 and below)
 Summary:	xoscope - digital oscilloscope on PC
-Summary(pl.UTF-8):   xoscope - cyfrowy oscyloskop na PC
+Summary(pl.UTF-8):	xoscope - cyfrowy oscyloskop na PC
 Name:		xoscope
 Version:	1.12
 Release:	0.2
