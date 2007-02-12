@@ -1,7 +1,7 @@
 # TODO: broken on archs with sizeof(int)!=sizeof(void*) (i.e. all 64-bit)
 #       (it abuses guint field to place strings - see gr_gtk.c:670 and below)
 Summary:	xoscope - digital oscilloscope on PC
-Summary(pl):	xoscope - cyfrowy oscyloskop na PC
+Summary(pl.UTF-8):   xoscope - cyfrowy oscyloskop na PC
 Name:		xoscope
 Version:	1.12
 Release:	0.2
@@ -24,10 +24,10 @@ x*oscope is a digital oscilloscope that uses a sound card (via
 /dev/dsp or EsounD) and/or Radio Shack ProbeScope a.k.a osziFOX as the
 signal input.
 
-%description -l pl
-x*oscope jest to cyfrowy oscyloskop, ktÛry uøywa jako sygna≥u
-wej∂ciowego karty dºwiÍkowej (/dev/dsp albo EsounD) i/lub Radio Shack
-ProbeScope znanego takøe jako osziFOX.
+%description -l pl.UTF-8
+x*oscope jest to cyfrowy oscyloskop, kt√≥ry u≈ºywa jako sygna≈Çu
+wej≈õciowego karty d≈∫wiƒôkowej (/dev/dsp albo EsounD) i/lub Radio Shack
+ProbeScope znanego tak≈ºe jako osziFOX.
 
 %prep
 %setup -q
