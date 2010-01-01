@@ -16,7 +16,7 @@ BuildRequires:	automake
 BuildRequires:	esound-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libtool
-Buildrequires:	perl-devel
+BuildRequires:	perl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
