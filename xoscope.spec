@@ -3,18 +3,18 @@
 Summary:	xoscope - digital oscilloscope on PC
 Summary(pl.UTF-8):	xoscope - cyfrowy oscyloskop na PC
 Name:		xoscope
-Version:	1.12
+Version:	2.0
 Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xoscope/%{name}-%{version}.tgz
-# Source0-md5:	89f8019a772713a976b634305d29cfe5
-Patch0:		xoscope-pmake.patch
+# Source0-md5:	f1430ccee4ee0f6f478c2cd209549741
+Patch0:		xoscope-2.0-3.1-nmu.diff
 URL:		http://xoscope.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	esound-devel
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk+2-devel >= 2.2
 BuildRequires:	libtool
 BuildRequires:	perl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,7 +31,7 @@ ProbeScope znanego także jako osziFOX.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -p1
 
 %build
 %{__aclocal}
@@ -52,7 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog HARDWARE INTERNALS NEWS README TODO
+%doc AUTHORS ChangeLog hardware/HARDWARE NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_libdir}/%{name}
 %{_mandir}/*/*
